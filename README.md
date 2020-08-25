@@ -19,6 +19,7 @@ Description: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.
 <p><b>This is a <a href="https://www.codingthelaw.org/#mission">class project</a>. You should not rely on it as a source of legal information!</b></p>
 <p>Answer the following questions to see if someone qualifies for DACA.</p>
 
+<html>
 Q(1): Is your birthday on or after June 16th, 1981?
 A: Yes.
 	Q(1.1): Did you enter the United States before your sixteenth birthday?
@@ -63,3 +64,4 @@ A: No
 Q(5): Sorry, you'll have to wait.
 Q(6): Sorry, you are not eligible. 
 Q(7): Congratulations, you are eligible.  
+<html>
