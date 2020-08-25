@@ -11,57 +11,7 @@ A collection of work for my Coding the Law class
   </body>
 </html>
 
-Title: DACA "Flowchart"
-Author: Tanner Murphy
-Description: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
-<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
-<h2 style="text-align:center;">DACA "Flowchart"</h2>
-<p><b>This is a <a href="https://www.codingthelaw.org/#mission">class project</a>. You should not rely on it as a source of legal information!</b></p>
-<p>Answer the following questions to see if someone qualifies for DACA.</p>
-
-<html>
-Q(1): Is your birthday on or after June 16th, 1981?
-A: Yes.
-	Q(1.1): Did you enter the United States before your sixteenth birthday?
-	A: Yes
-		Q(1.1.1): Were you in the United States on June 15th, 2012? 
-		A: Yes
-			Q(1.1.1.1): Have you continuously resided in the United States since June 15th, 2007?
-			A: Yes
-				Q(1.1.1.1.1): Were you out of status on June 15th, 2012?
-				A:Yes
-					Q(1.1.1.1.1.1): GOTO:2
-A: No
-	Q(1.2): GOTO:6
-
-Q(2): Do you meet any of the following criteria: (1) convicted of a felony; (2) convicted of more than one misdemeanor; (3) pose a threat to national security?
-A: Yes
-	Q(2.1): GOTO:6
-A: No
-	Q(2.2): GOTO:3
-
-Q(3): Do you meet either of the following criteria: (1) currently in school; (2) Have a HS diploma or GED?
-A: Yes
-	Q(3.1): Are you at least 15 years of age?
-	A: Yes
-		Q(3.1.1): GOTO:7
-	A: No
-		Q(3.1.2): Are you currently in removal proceedings or have a final removal or VD order?
-		A: Yes
-			Q(3.1.2.1): GOTO:7
-		A:No
-			Q(3.1.2.2): GOTO:4
-A: No
-	Q(3.2): GOTO:4
-	
-Q(4): Well, are you an honorably discharged veteran of the U.S. coast guard or Armed Forces?
-A: Yes
-	Q(4.1): GOTO:7
-A: No
-	Q(4.2): GOTO:5
 
 
-Q(5): Sorry, you'll have to wait.
-Q(6): Sorry, you are not eligible. 
-Q(7): Congratulations, you are eligible.  
-<html>
+
+
