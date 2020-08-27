@@ -1,0 +1,82 @@
+Title: Indigency "Flowchart"
+Author: Tanner Murphy 
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Indigency "Flowchart"</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p1">class project</a>. You should not rely on it as a source of legal information!</b></p>
+<p>Answer the following questions to see if you qualify for appointed counsel in [insert state name].</p>
+
+
+Q(1): Has the individual in question been charged with a public offense in the state of Utah?
+A: Yes
+	Q(1.1): Does this person live alone?
+	A: Yes
+		Q(1.1.1): Do you make less than $12, 760 per year?
+		A: Yes
+			Q(1.1.1.1):GOTO:2
+		A: No
+			Q(1.1.1.2):GOTO:6
+	A: No
+		Q(1.1.2): Are there two people (including the individual in question) who live in the household?
+		A: Yes
+			Q(1.1.2.1): Does the household make less than $17,240 per year?
+			A: Yes
+				Q(1.1.2.1.1):GOTO:2
+			A: No
+				Q(1.1.2.1.2):GOTO:6
+		A: No
+			Q(1.1.2.2): Are there three people (including the individual in question) who live in the household?
+			A:Yes
+				Q(1.1.2.2.1): Does the household make less than $21,720 per year?
+				A: Yes
+					Q(1.1.2.2.1.1):GOTO:2
+				A:No
+					Q(1.1.2.2.1.2):GOTO:6
+			A:No
+				Q(1.1.2.2.2): Are there four people (including the individual in question) who live in the household?
+				A: Yes
+					Q(1.1.2.2.2.1): Does the household make less than $26,200 per year?
+					A: Yes
+						Q(1.1.2.2.2.1.1):GOTO:2
+					A: No
+						Q(1.1.2.2.2.1.2):GOTO:6
+				A: No
+					Q(1.1.2.2.2.2): Are there five people (including the individual in question) who live in the household?
+					A:Yes
+						Q(1.1.2.2.2.2.1): Does the household make less than $30,680 per year?
+						A: Yes
+							Q(1.1.2.2.2.2.1.1):GOTO:2
+						A:No
+							Q(1.1.2.2.2.2.1.2):GOTO:6
+					A:No
+						Q(1.1.2.2.2.2.2):GOTO:7
+						
+			
+
+
+A: No
+	Q(1.2):GOTO:5
+			
+Q(2): Is the individual currently under arrest or have they been charged with a crime in which the probability that the penalty to be imposed is confinement in jail or prison?
+A: Yes
+	Q(2.1):GOTO:7
+A: No
+	Q(2.2):GOTO:3
+Q(3): Has this individual requested legal defense?
+A: Yes
+	Q(3.1):GOTO:7
+A: No
+	Q(3.2):GOTO:4
+Q(4): Has the court by its own motion or otherwise ordered legal defense services and has the defendant not waived or rejected the opportunity to be provided legal defense?
+A:Yes
+	Q(4.1):GOTO:7
+A: No
+	Q(4.2):GOTO:6
+
+
+
+
+Q(5): I'm sorry, this questionnaire is only applicable to those who've been charged with a public offense in Utah.
+Q(6): This individual does not have the right to court-appointed counsel.
+Q(7): This individual has the right to court-appointed counsel. 
+Q(8): I'm sorry, the household size is outside the range of the program. 
