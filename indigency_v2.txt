@@ -1,0 +1,64 @@
+Title: Indigency "Flowchart"
+Author: Tanner Murphy 
+Before: <link rel="stylesheet" type="text/css" href="https://suffolklitlab.org/howto/qna/style/style.css">
+<div id="icon" style="background-size: 110px 99px;background-image: url('https://suffolklitlab.org/howto/qna/images/maxheadroom.gif');"></div>
+<h2 style="text-align:center;">Indigency "Flowchart"</h2>
+<p><b>This is a <a href="https://www.codingthelaw.org/level/2/#mission_p1">class project</a>. You should not rely on it as a source of legal information!</b></p>
+<p>Answer the following questions to see if you qualify for appointed counsel in [insert state name].</p>
+
+
+After:
+<script>
+function fedpov(house,income,percentage){
+	// Determines if your income is less than or equal to
+	// a percentage of the 2020 federal poverty guidelines
+	// for the contiguous United States. See
+	// https://aspe.hhs.gov/poverty-guidelines
+
+		var line = NaN;
+
+		if (house == 1) {
+			line = 12760;
+		} else if (house == 2) {
+			line = 17240;
+		} else if (house == 3) {
+			line = 21720;
+		} else if (house == 4) {
+			line = 26200;
+		} else if (house == 5) {
+			line = 30680;
+		} else if (house == 6) {
+			line = 35160;
+		} else if (house == 7) {
+			line = 39640;
+		} else if (house == 8) {
+			line = 44120;
+		} else if (house > 8) {
+			line = 44120 + (house-8)*4480;
+		}
+
+		if (income <= (line*(percentage/100))) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
+
+
+
+
+Q(1): Has the individual in question been charged with a public offense in the state of Utah?
+A: Yes
+	Q(house): How many people, including the individual in question, live in the household?
+	X:
+		Q(income): How much money does the household bring in as income on an annual basis?
+		X:[javascript:if (fedpov(getvar('house'),getvar('income'),150)){ goto('4') } else { goto('3') } ]
+A: No
+	Q(1.2):GOTO:2
+			
+
+
+Q(2): I'm sorry, this questionnaire is only applicable to those who've been charged with a public offense in Utah.
+Q(3): This individual probably does not have the right to court-appointed counsel.
+Q(4): This individual probably has the right to court-appointed counsel. 
